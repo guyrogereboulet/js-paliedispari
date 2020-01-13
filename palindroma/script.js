@@ -10,22 +10,45 @@
 // Per il secondo esercizio stessa cosa facciamo funzionare tutto e se possibile poi facciamo un restyling con le funzioni.
 
 // 1__Scrivi una funzione per capire se la parola è palindroma
+var parolaUtente = prompt("Inserisci una parola");
+var parolaGirata = roveciaParola(parolaUtente);
 
-var parola = prompt("Inserisci una parola");
-var controllo = palindroma(parola);
-console.log(controllo);
-
-function palindroma() {
-  var risultato = parola.split("").reverse().join("");
-
-  if (parola == risultato) {
-    return parola + " è palindroma";
-  }
-
-  else {
-    return parola + " non è palindroma";
-  }
+if (parolaUtente == parolaGirata) {
+ console.log("La parola è palindroma");
 }
+
+else {
+  console.log("La parola non è palindroma");
+}
+function roveciaParola(parola) {
+ var parolaRovesciata = "";
+ for (var i = parola.length -1; i >= 0; i--) {
+   parolaRovesciata += parola[i]
+ }
+ return parolaRovesciata;
+}
+
+
+
+// Soluzione con le funzioni (split, reverse, join)
+// var controllo = palindroma(parola);
+// console.log(controllo);
+//
+// function palindroma() {
+//   var risultato = parola.split("").reverse().join("");
+//
+//   if (parola == risultato) {
+//     return parola + " è palindroma";
+//   }
+//
+//   else {
+//     return parola + " non è palindroma";
+//   }
+// }
+
+
+
+
 
 
 
