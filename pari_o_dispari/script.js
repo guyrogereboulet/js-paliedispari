@@ -32,9 +32,9 @@
 
 var parioDispari = prompt("Scrivi pari o dispari");
 var sceltaNumerogiocatore = parseInt(prompt("scrivi un numero da 1 a 5"));
-var sommaNumeri = sceltaNumerogiocatore + sceltaNumeroComputer;
 var sceltaNumeroComputer = getRandomIntInclusive(1,5);
 var numero = console.log(sceltaNumeroComputer);
+var sommaNumeri = sceltaNumerogiocatore + sceltaNumeroComputer;
 
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
